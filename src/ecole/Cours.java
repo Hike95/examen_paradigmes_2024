@@ -2,7 +2,7 @@ package ecole;
 
 
 
-public class Cours {
+public class Cours implements Participable{
 
 protected  String titre;
 protected  String formateur;
@@ -54,7 +54,23 @@ public void setPlacesRestantes(int placesRestantes) {
 
 public void montrerDetails() {
 	
-	System.out.println(" titrle "+this.titre+" formateur"+this.formateur+",duree "+this.duree+", placesRestantes"+this.placesRestantes+"");
+	System.out.println(" titre "+this.titre+" formateur"+this.formateur+",duree "+this.duree+", placesRestantes"+this.placesRestantes+"");
+	
+}
+
+@Override // ajoute tableau cours
+public void participer() {
+	// TODO Auto-generated method stub
+  System.out.println("Le formateur "+this.formateur+" pariticipe au cours "+this.titre+"qui dure "+this.duree+" ");
+	
+}
+
+@Override
+public void quitter() {
+	// TODO Auto-generated method stub
+	  System.out.println("Le formateur "+this.formateur+" quitte le cours "+this.titre+"qui dure "+this.duree+" " );
+				
+	
 	
 }
 

@@ -3,21 +3,20 @@ package ecole;
 import java.util.Date;
 
 public class Etudiant extends Individu {
-    protected Date dateinscription;
+    protected Date dateInscription;
     protected String niveauEtudes;
-	public Etudiant(String nom, String prenom,int identifiant,Date dateinscription,String niveauEtudes) {
+	public Etudiant(String nom, String prenom,int identifiant,Date dateInscription,String niveauEtudes) {
 		
 
 	//	this.dateinscription=dateinscription;
 	super(nom,prenom,identifiant);	
-	this.dateinscription=dateinscription;
+	this.dateInscription=dateInscription;
 	this.niveauEtudes=niveauEtudes;
 	}
 
-	@Override
-	public void montrerdetails() {
+	public void montrerDetails() {
 	   // TODO Auto-generated method stub
-	   System.out.println(" nom "+this.nom+" prenom "+this.prenom+" identtifiant "+this.identifiant+" dateInsritption "+this.dateinscription+" niveauEtudes "+niveauEtudes+"   "); 
+	   System.out.println(" Etudiant nom "+this.nom+" prenom "+this.prenom+" identifiant "+this.identifiant+" dateInsritption "+this.dateInscription+" niveauEtudes "+this.niveauEtudes+"   "); 
 		  
 	}
 
