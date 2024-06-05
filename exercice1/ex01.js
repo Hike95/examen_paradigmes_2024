@@ -1,4 +1,4 @@
-const calculateTip((facture, note) => {
+const calculateTip=(facture, note) => {
     if (note === "Terrible");//arr.splice(2, 1);
        pourboire=facture
     if (note === "Poor");
@@ -21,7 +21,7 @@ const calculateTip((facture, note) => {
 
 
 
-});
+}
 
 calculateTip(20, "ExcellEnt");
 calculateTip(26.95, "goOd");
