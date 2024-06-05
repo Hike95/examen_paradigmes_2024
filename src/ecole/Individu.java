@@ -15,11 +15,11 @@ public abstract class Individu {
 	   
    }
 
-   public void SetNom(String nom) {
+   public void setNom(String nom) {
 	   this.nom=nom;
 	   
    }
-   public void SetPrenom(String prenom) {
+   public void setPrenom(String prenom) {
 	   this.prenom=prenom;
 	   
    }
@@ -43,10 +43,5 @@ public abstract class Individu {
 	   return identifiant;
 	   
    }
-   public abstract void montrerdetails(); //{
-	   
-	//  System.out.println(" nom "+this.nom+" prenom "+this.prenom+" identtifiant "this.identifiant"   "); 
-	   
-	   
-  // }
+   public abstract void montrerDetails(); 
 }
